@@ -20,8 +20,21 @@
             transform: translate(-50%, -50%);
         }
         p {
+            position: relative;
+            left: 23%;
+            text-align: center;
             display: inline-block;
+            }
+        
+        #good {
+         color: grey;
+        text-align: center;
+            font-family: sans-serif;
+            font-size: 100px;
+            margin: 10px;
         }
+        
+        
         #lb,
         #rb {
             color: white;
@@ -40,7 +53,7 @@
         }
         #controls {
             /*background-color:red;*/
-            z-index: 1000;
+            z-index: 1000; /*controls are on top*/ 
             position: absolute;
             top: 50%;
             left: 50%;
@@ -111,7 +124,7 @@
                     var newHeight;
                     var newWidth;
 
-                    var ratio = 1;
+                    
                     if (iHeight > iWidth){
                         console.log("image is portrait");
                         ratio = cHeight/iHeight;
@@ -200,20 +213,22 @@
 </head>
 
 <body>
+    <h2 id="good">Good Dog</h2>
+    
     <div id="slideshow">
         <p class="pic">
-            <a href="http://placecage.com/600/400" title="fred is a goofball.">
-                <img src="face_thumb.jpg">
+            <a href="face.JPG" title="Derp">
+                <img src="outsidedog.jpg">
             </a>
         </p>
         <p class="pic">
-            <a href="http://placekitten.com/500/200" title="shaggy is always hungry.">
-                <img src="face2_thumb.jpg">
+            <a href="face2.JPG" title="Deeerp.">
+                <img src="floordog.jpg">
             </a>
         </p>
         <p class="pic">
-            <a href="http://placekitten.com/900/1200" title="scooby is not a dog.">
-                <img src="face3_thumb.jpg">
+            <a href="face3.JPG" title="Deeeeerrrp.">
+                <img src="floordog2.jpg">
             </a>
         </p>
     </div>
